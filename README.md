@@ -7,6 +7,7 @@ Welcome, [to the laboratoire](https://www.youtube.com/watch?v=hdHFmc9oiKY)!
 ## Basics
 
 This is a website for the Anzel acoustics lab. This repository contains common code for the entire lab to use and share. Folders are as follows:
+
 - `instruments`: Documentation and calibration for important instruments around the lab.
 - `analysis_code`: Various code routines for different types of analysis.
 - `weekly_meeting`: Please upload slides from weekly meeting presentations to here.
