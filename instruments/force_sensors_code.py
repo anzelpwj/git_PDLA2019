@@ -1,5 +1,4 @@
-"""Some basic routines for working with the force sensors.
-"""
+"""Some basic routines for working with the force sensors."""
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,6 +9,11 @@ from calibrations import force_sensors as FORCE_SENSORS
 
 
 def plot_force_sensor(sensor_id):
+    """Generates a plot of the force/voltage response curve for a force sensor.
+
+    Inputs:
+        sensor_id (str): Serial number of force sensor.
+    """
     try:
         data = FORCE_SENSORS[sensor_id]
     except:
@@ -24,10 +28,9 @@ def plot_force_sensor(sensor_id):
     spline_y = get_force_for_voltage(spline_x, sensor_id)
 
     plt.figure(figsize=(5, 5), dpi=150)
-    plt.scatter(forces, 1000*voltages, color='k', marker='o', label="Measured values")
-    plt.plot(spline_x, 1000*spline_y, color='k', linewidth=2, linestyle="--", label="Interpolation")
+    plt.scatter(forces, 1000*voltages, color='k', marker='o')
+    plt.plot(spline_x, 1000*spline_y, color='k', linewidth=2, linestyle="--")
     plt.title("Sensor {device}, {factor:.2e} N/V".format(device=sensor_id, factor=slope), fontsize=16)
-    plt.legend(fontsize=16)
     plt.xlabel("Force [N]", fontsize=16)
     plt.ylabel("Voltage [mV]", fontsize=16)
 

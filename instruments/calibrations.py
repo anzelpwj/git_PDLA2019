@@ -18,16 +18,15 @@ force_sensors = {
         'forces':   [1.01, 2.00, 3.05, 3.98, 5.03, 6.04],
         'voltages': [0.65, 1.32, 2.00, 2.74, 3.39, 4.25]
     },
+
 }
 
 # Response is scaled at lowest frequency. See base response for mV/Pa.
-# To test, run command
-# $ python microphone_code.py MICROPHONEID
 microphones = {
     'NGY0543': {
-        'frequency': [100,  200,  300,  400,  500,  600,  700,  800,  900, 1000],
-        'response':  [  1, 1.05, 1.07, 1.25, 5.04, 2.21, 0.93, 0.63, 0.27, 0.11],
-        'phase': [0, 0.01, 0.05, 0.17, 0.54, 1.45, 2.56, 3.00, 3.05, 3.12, 3.13],
+        'frequency': [100,   200,   300,   400,   500,   600,   700,   800,   900,  1000],
+        'response':  [  1,  1.05,  1.07,  1.25,  5.04,  2.21,  0.93,  0.63,  0.27,  0.11],
+        'phase':     [  0, -0.01, -0.05, -0.17, -0.54, -1.45, -2.56, -3.00, -3.05, -3.12],
         'base_response': 0.276
     }
 }
