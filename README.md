@@ -11,6 +11,7 @@ This is a website for the Anzel acoustics lab. This repository contains common c
 - `instruments`: Documentation and calibration for important instruments around the lab.
 - `analysis_code`: Various code routines for different types of analysis.
 - `weekly_meeting`: Please upload slides from weekly meeting presentations to here.
+- `teaching_materials`: Class materials for Git training.
 
 ## Updating code
 

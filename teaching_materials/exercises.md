@@ -32,7 +32,7 @@ Once you're done, please push your branch to GitHub (command `git push origin BR
 
 ## Exercise 3: Opening a Pull Request
 
-FILL IN FILL IN
+Taking the branch opened in exercise 2, create a Pull Request for the branch back to master. Tag me (user name `anzelpwj`) in it.
 
 ## Exercise 4: Doing code review
 
@@ -48,14 +48,14 @@ Create a unit test for `force_sensor_code.py:get_force_for_voltage`, put it in a
 
 ```python
 import numpy as np
-from force_sensor_code import get_force_for_voltage
+from force_sensors_code import get_force_for_voltage
 
 def test_get_force_for_voltage():
     voltages = np.array([1.5, 2.5])
 
     expected_forces = np.array([1.5, 2.5])
     forces = get_force_for_voltage(voltages, 'DUMMY')
-    np.testing.assert_all_close(forces, expected_forces)
+    np.testing.assert_allclose(forces, expected_forces)
 
 if __name__ == '__main__':
     test_get_force_for_voltage()

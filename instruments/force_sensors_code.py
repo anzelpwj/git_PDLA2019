@@ -24,8 +24,8 @@ def plot_force_sensor(sensor_id):
     voltages = np.array(data['voltages'])
     slope, _, _, _, _ = linregress(voltages, forces)
 
-    spline_x = np.linspace(0, max(voltages))
-    spline_y = get_force_for_voltage(spline_x, sensor_id)
+    spline_y = np.linspace(0, max(voltages))
+    spline_x = get_force_for_voltage(spline_y, sensor_id)
 
     plt.figure(figsize=(5, 5), dpi=150)
     plt.scatter(forces, 1000*voltages, color='k', marker='o')
@@ -33,6 +33,8 @@ def plot_force_sensor(sensor_id):
     plt.title("Sensor {device}, {factor:.2e} N/V".format(device=sensor_id, factor=slope), fontsize=16)
     plt.xlabel("Force [N]", fontsize=16)
     plt.ylabel("Voltage [mV]", fontsize=16)
+    plt.tight_layout()
+    plt.show()
 
 
 def get_force_for_voltage(voltages, sensor_id):
