@@ -2,8 +2,6 @@
 
 ## Exercise 1: Merge conflict
 
-### Person 1
-
 In order to build some unit tests for code, you've decided to add a dummy force sensor to the devices at `calibrations.py`. Please add the following code to the beginning of the force sensors block (starting at line 5).
 
 ```python
@@ -32,7 +30,7 @@ Once you're done, please push your branch to GitHub (command `git push origin BR
 
 ## Exercise 3: Opening a Pull Request
 
-Taking the branch opened in exercise 2, create a Pull Request for the branch back to master. Tag me (user name `anzelpwj`) in it.
+Taking the branch opened in exercise 2, create a Pull Request for the branch back to master. Tag me (username `anzelpwj`) in it.
 
 ## Exercise 4: Doing code review
 
@@ -44,7 +42,7 @@ Our instrument lab control code is complete untested! This will not do. Please s
 
 ## Exercise 5b: Fixing the problem
 
-Create a unit test for `force_sensor_code.py:get_force_for_voltage`, put it in a branch, and open a pull request for the code. An example may be a file with:
+Create a unit test for `force_sensors_code.py:get_force_for_voltage`, put it in a branch, and open a pull request for the code. An example may be a file with:
 
 ```python
 import numpy as np
@@ -61,3 +59,5 @@ if __name__ == '__main__':
     test_get_force_for_voltage()
     print("TESTS COMPLETE!")
 ```
+
+If you would like to copy-paste this code, you will find it in `teaching_materials/exercises.md`.
