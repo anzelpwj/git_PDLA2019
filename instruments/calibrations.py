@@ -1,6 +1,4 @@
 # Forces in Newtons, voltages in Volts.
-# To test, run command
-# $ python force_sensors_code.py SENSORID
 force_sensors = {
     'C300510': {
         'forces':   [10.0, 20.0, 30.0, 40.0, 50.0, 60.0],

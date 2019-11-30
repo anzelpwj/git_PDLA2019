@@ -34,7 +34,7 @@ Taking the branch opened in exercise 2, create a Pull Request for the branch bac
 
 ## Exercise 4: Doing code review
 
-We're going to create a PR for the branch `exercises/microphone_code` together. I will make the PR, we will do review in the tutorial.
+We'd like to add some code that plots a transfer function for our microphones, much like our force-voltage plots for the force sensors. We're going to create a PR for the branch `exercises/microphone_code` together. I will make the PR, we will do review in the tutorial.
 
 ## Exercise 5a: Creating an issue
 
