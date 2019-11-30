@@ -21,6 +21,12 @@ force_sensors = {
 
 # Response is scaled at lowest frequency. See base response for mV/Pa.
 microphones = {
+    'DUMMY': {
+        'frequency': [2, 4, 6, 8],
+        'response':  [1, 1, 1, 1],
+        'phase':     [0, 0, 0, 0],
+        'base_response': 1
+    },
     'NGY0543': {
         'frequency': [100,   200,   300,   400,   500,   600,   700,   800,   900,  1000],
         'response':  [  1,  1.05,  1.07,  1.25,  5.04,  2.21,  0.93,  0.63,  0.27,  0.11],
