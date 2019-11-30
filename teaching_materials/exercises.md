@@ -15,7 +15,7 @@ Instructor will then try to add his own version of a dummy sensor at the same pl
 
 ## Exercise 2: Opening a branch
 
-We're going to try to take a similar approach for the microphone code, but this time we will create a branch to add a new sensor to as to be more careful against merge conflicts. Create a branch on your system, give it a good name (we'll all get to see it, so keep it professional...), and please add the following code block at line 28 of `calibrations.py`.
+We're going to try to take a similar approach for the microphone code, but this time we will create a branch to add a new sensor to as to be more careful against merge conflicts. Create a branch on your system, give it a good name (we'll all get to see it, so keep it professional...), and please add the following code block the beginning of the microphones dictionary in `calibrations.py`.
 
 ```python
     'DUMMY': {
@@ -34,30 +34,12 @@ Taking the branch opened in exercise 2, create a Pull Request for the branch bac
 
 ## Exercise 4: Doing code review
 
-I'm going to submit a pull request (copying the code from `./teaching_materials/sample_microphone_code.py`), and we're going to do code review of this together.
+We're going to create a PR for the branch `exercises/microphone_code` together. I will make the PR, we will do review in the tutorial.
 
 ## Exercise 5a: Creating an issue
 
-Our instrument lab control code is complete untested! This will not do. Please submit a ticket that we need to fix this problem.
+Our instrument lab control code is completely untested! This will not do. Please submit a issue in the repo that we need to fix this problem.
 
-## Exercise 5b: Fixing the problem
+## Exercise 5b: Fixing the issue
 
-Create a unit test for `force_sensors_code.py:get_force_for_voltage`, put it in a branch, and open a pull request for the code. An example may be a file with:
-
-```python
-import numpy as np
-from force_sensors_code import get_force_for_voltage
-
-def test_get_force_for_voltage():
-    voltages = np.array([1.5, 2.5])
-
-    expected_forces = np.array([1.5, 2.5])
-    forces = get_force_for_voltage(voltages, 'DUMMY')
-    np.testing.assert_allclose(forces, expected_forces)
-
-if __name__ == '__main__':
-    test_get_force_for_voltage()
-    print("TESTS COMPLETE!")
-```
-
-If you would like to copy-paste this code, you will find it in `teaching_materials/exercises.md`.
+A branch to fix our issue has been created at `exercises/force_sensors_unit_test`. Please open a pull request, refer to the issue number, and tag me as a reviewer.
