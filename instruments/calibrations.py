@@ -1,4 +1,6 @@
 # Forces in Newtons, voltages in Volts.
+# To test, run
+# $ python force_sensors_code.py SENSOR_ID
 force_sensors = {
     'DUMMY': {
         'forces':   [1, 2, 3, 4, 5],
@@ -24,6 +26,8 @@ force_sensors = {
 }
 
 # Response is scaled at lowest frequency. See base response for mV/Pa.
+# To test, run
+# $ python microphone_code.py MIC_ID
 microphones = {
     'NGY0543': {
         'frequency': [100,   200,   300,   400,   500,   600,   700,   800,   900,  1000],
