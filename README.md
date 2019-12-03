@@ -2,8 +2,6 @@
 
 This is a website for a fake lab, as a part of Git training by Paul Anzel. Slides for this talk can be found [right here](https://docs.google.com/presentation/d/1njdRK0la0cCh3AiPoYeOiqgw36jRGnt70Gz80emG9Sc/edit?usp=sharing).
 
-Welcome, [to the laboratoire](https://www.youtube.com/watch?v=hdHFmc9oiKY)!
-
 ## Basics
 
 This is a website for the Anzel acoustics lab. This repository contains common code for the entire lab to use and share. Folders are as follows:
